@@ -37,7 +37,6 @@ struct PersistenceController {
    init(inMemory: Bool = false) {
       
       container = NSPersistentContainer(name: "Ship_2")
-      container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy // OLIVIER
       
       if inMemory {
          container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
@@ -59,5 +58,7 @@ struct PersistenceController {
             fatalError("Unresolved error \(error), \(error.userInfo)")
          }
       })
+      
+      container.viewContext.mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy // OLIVIER
    }
 }
