@@ -13,6 +13,8 @@
 		0913A13826B7DCE20022AB57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0913A13726B7DCE20022AB57 /* Preview Assets.xcassets */; };
 		0913A13A26B7DCE20022AB57 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913A13926B7DCE20022AB57 /* Persistence.swift */; };
 		0913A13D26B7DCE20022AB57 /* Ship_2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0913A13B26B7DCE20022AB57 /* Ship_2.xcdatamodeld */; };
+		0913A14B26B7DFA00022AB57 /* Ship+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913A14926B7DFA00022AB57 /* Ship+CoreDataClass.swift */; };
+		0913A14C26B7DFA00022AB57 /* Ship+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0913A14A26B7DFA00022AB57 /* Ship+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		0913A13926B7DCE20022AB57 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0913A13C26B7DCE20022AB57 /* Ship_2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ship_2.xcdatamodel; sourceTree = "<group>"; };
 		0913A13E26B7DCE20022AB57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0913A14926B7DFA00022AB57 /* Ship+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ship+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		0913A14A26B7DFA00022AB57 /* Ship+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ship+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				0913A13026B7DCDF0022AB57 /* Ship_2App.swift */,
+				0913A14526B7DD820022AB57 /* Model */,
 				0913A13226B7DCDF0022AB57 /* ContentView.swift */,
 				0913A13426B7DCE20022AB57 /* Assets.xcassets */,
-				0913A13926B7DCE20022AB57 /* Persistence.swift */,
 				0913A13E26B7DCE20022AB57 /* Info.plist */,
-				0913A13B26B7DCE20022AB57 /* Ship_2.xcdatamodeld */,
 				0913A13626B7DCE20022AB57 /* Preview Content */,
 			);
 			path = "Ship 2";
@@ -73,6 +76,17 @@
 				0913A13726B7DCE20022AB57 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0913A14526B7DD820022AB57 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0913A14926B7DFA00022AB57 /* Ship+CoreDataClass.swift */,
+				0913A14A26B7DFA00022AB57 /* Ship+CoreDataProperties.swift */,
+				0913A13B26B7DCE20022AB57 /* Ship_2.xcdatamodeld */,
+				0913A13926B7DCE20022AB57 /* Persistence.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,10 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0913A14B26B7DFA00022AB57 /* Ship+CoreDataClass.swift in Sources */,
 				0913A13D26B7DCE20022AB57 /* Ship_2.xcdatamodeld in Sources */,
 				0913A13A26B7DCE20022AB57 /* Persistence.swift in Sources */,
 				0913A13326B7DCDF0022AB57 /* ContentView.swift in Sources */,
 				0913A13126B7DCDF0022AB57 /* Ship_2App.swift in Sources */,
+				0913A14C26B7DFA00022AB57 /* Ship+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
